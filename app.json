@@ -1,0 +1,12 @@
+{
+  "name": "croco",
+  "displayName": "croco",
+  "expo": {
+    "name": "croco",
+    "slug": "croco",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
