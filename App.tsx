@@ -1,19 +1,24 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+/**
+ * @format
+ */
+ import React from 'react';
+ import 'react-native-gesture-handler'
+ import { NavigationContainer } from '@react-navigation/native';
+ import { enableScreens } from 'react-native-screens';
+ import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+ import MainView from './src/screens/MainNavigator';
+ 
+ const App = () => {
+   return (
+     <SafeAreaProvider>
+       <NavigationContainer>
+        <MainView/>
+      </NavigationContainer>
+     </SafeAreaProvider>
+   );
+ };
+ 
+ export default App;
+ 
